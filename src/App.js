@@ -7,7 +7,7 @@ import MovieCard from "./movie";
 export default function App() {
   const [movies, setMovies] = useState([]);
   const [title, setTitle] = useState("");
-  const apiUrl = "http://www.omdbapi.com/?apikey=fa0afaa5";
+  const apiUrl = "https://www.omdbapi.com/?apikey=fa0afaa5";
   async function getData(title) {
     const response = await fetch(`${apiUrl}&s=${title}`);
     const data = await response.json();
